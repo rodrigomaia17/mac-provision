@@ -30,7 +30,7 @@
 		"virtualbox",
 		"vlc-nightly",
 		"vagrant",
-		"virtualbox"
+		"dockertoolbox"
 			],
 		"formulas": [
 			"archey",

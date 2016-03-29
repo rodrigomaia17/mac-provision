@@ -34,22 +34,8 @@ zsh --rcs $TMP_RC
 unset TMP_RC
 
 # ------------------------------------------------------------------------------
-log "Setting up jenv…"
-mkdir -p ~/.jenv/versions
-for jdk in /Library/Java/JavaVirtualMachines/jdk1.*/Contents/Home; do
-  jenv add $jdk
-done
-
-# ------------------------------------------------------------------------------
-log "Installing vim-plug…"
-curl -s -fLo ~/.vim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# ------------------------------------------------------------------------------
 log "Cleaning up brew…"
 brew linkapps
 brew prune
 brew cleanup --force -s
-
-[ -d ~/.antigen ] || git clone https://github.com/zsh-users/antigen.git ~/.antigen
 
