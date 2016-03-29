@@ -2,6 +2,9 @@
 set -eu
 
 [ -d ~/.cider ] || git clone http://github.com/rodrigomaia17/mac-provision ~/.cider
+cd ~/.cider
+#git pull --recurse-submodules && git submodule update --recursive
+git submodule foreach "(git checkout master; git pull)"
 command -v pip    >/dev/null || sudo easy_install pip
 #command -v cider  >/dev/null || sudo pip install https://github.com/att14/cider/archive/outdated-fix.zip --upgrade 
 command -v cider  >/dev/null || sudo pip install -U cider

@@ -1,6 +1,7 @@
 {
 	"after-scripts": [
 		"./scripts/after.sh",
+		"./scripts/install_oh_my_zsh.sh",
 		"./scripts/osx-for-hackers.sh",
 		"./scripts/login.items.sh",
 		"./scripts/restart.affected.sh",
@@ -30,7 +31,8 @@
 		"virtualbox",
 		"vlc-nightly",
 		"vagrant",
-		"dockertoolbox"
+		"dockertoolbox",
+		"thunderbird"
 			],
 		"formulas": [
 			"archey",
@@ -61,9 +63,16 @@
 		"wget",
 		"the_silver_searcher",
 		"tree",
-		"tor"
+		"tor",
+		"gnupg"
 			],
 		"symlinks": {
+		"dotfiles/.alias":"~/dotfiles/",
+		"dotfiles/.tmux.conf":"~/dotfiles/",
+		"dotfiles/.vimrc.local":"~/dotfiles/",
+		"dotfiles/.vimrc.plugins":"~/dotfiles/",
+		"dotfiles/.zshrc.local":"~/dotfiles/"
+		
 		},
 		"taps": [
 			"caskroom/cask",

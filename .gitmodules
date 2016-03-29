@@ -1,0 +1,3 @@
+[submodule "symlinks/dotfiles"]
+	path = symlinks/dotfiles
+	url = https://github.com/rodrigomaia17/dotfiles.git
