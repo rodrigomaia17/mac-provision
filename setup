@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 set -eu
 
-[ -d ~/.cider ] || git clone git@github.com:renanmartins/dotfiles.git ~/.cider
+[ -d ~/.cider ] || git clone http://github.com/rodrigomaia17/mac-provision ~/.cider
 command -v pip    >/dev/null || sudo easy_install pip
-command -v cider  >/dev/null || sudo pip install https://github.com/att14/cider/archive/outdated-fix.zip --upgrade 
+#command -v cider  >/dev/null || sudo pip install https://github.com/att14/cider/archive/outdated-fix.zip --upgrade 
+command -v cider  >/dev/null || sudo pip install -U cider
 command -v brew   >/dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install caskroom/cask/brew-cask
+#brew install brew-cask
 
 cider restore
