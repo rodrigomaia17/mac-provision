@@ -58,7 +58,6 @@
 		"nvm",
 		"pyenv",
 		"rbenv --HEAD",
-		"rbenv-gem-rehash",
 		"ruby-build",
 		"tree",
 		"wget",
