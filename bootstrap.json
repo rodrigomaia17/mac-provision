@@ -2,9 +2,9 @@
   "after-scripts": [
     "./scripts/after.sh",
     "./scripts/install_oh_my_zsh.sh",
+    "./scripts/osx-for-hackers/osx-for-hackers.sh",
     "./scripts/login.items.sh",
     "./scripts/restart.affected.sh",
-    "./scripts/osx-for-hackers/osx-for-hackers.sh",
     "echo '\n-- PLEASE RESTART THE LAPTOP --\n'"
   ],
   "casks": [
@@ -23,6 +23,7 @@
     "iterm2-nightly",
     "java7",
     "silverlight",
+    "slack",
     "skype",
     "spectacle",
     "spotify",
