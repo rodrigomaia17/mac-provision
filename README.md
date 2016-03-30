@@ -5,6 +5,6 @@ curl -Ls https://raw.githubusercontent.com/rodrigomaia17/mac-provisioning/master
 ```
 
 Manual steps:
-	- Create a custom .zsh file in the ~/.oh-my-zsh/custom and use it to load my .zshrc.local file ( in the ~/dotfiles folder) 
+  - Colocar a variavel plugins no .zshrc: plugins=(git brew brew-cask npm tmux vagrant zsh_reload zsh-syntax-highlighting)
 
 

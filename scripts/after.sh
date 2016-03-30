@@ -11,9 +11,12 @@ log "creating .zshrc.local"
 [ -f ~/.oh-my-zsh/custom/local.zsh ] || echo "source  ~/dotfiles/.zshrc.local" >> ~/.oh-my-zsh/custom/local.zsh
 
 # -----------------------------------------------------------------------------
+log "setting up syntax highlighting"
+[ -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ] ||  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+# -----------------------------------------------------------------------------
 log "setting up dracula color scheme"
 [ -d ~/dracula-theme ] || git clone https://github.com/zenorocha/dracula-theme/ ~/dracula-theme
-[ -d ~/.oh-my-zsh/themes/dracula.zsh-theme ] || ln -s ~/dracula-theme/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
+[ -f ~/.oh-my-zsh/themes/dracula.zsh-theme ] || ln -s ~/dracula-theme/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 
 # -----------------------------------------------------------------------------
 log "setting up  .vimrc"
