@@ -1,3 +1,6 @@
 [submodule "symlinks/dotfiles"]
 	path = symlinks/dotfiles
 	url = https://github.com/rodrigomaia17/dotfiles.git
+[submodule "scripts/osx-for-hackers"]
+	path = scripts/osx-for-hackers
+	url = https://gist.github.com/0d6fcbf93eef67d86c71291b5e56e0de.git
