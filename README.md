@@ -5,6 +5,6 @@ curl -Ls https://raw.githubusercontent.com/rodrigomaia17/mac-provisioning/master
 ```
 
 Manual steps:
-  - Colocar a variavel plugins no .zshrc: plugins=(git brew brew-cask npm tmux vagrant zsh_reload zsh-syntax-highlighting)
-
-
+  - set the colorscheme dracula at iterm2 preferences
+  - create the variable plugins at.zshrc: plugins=(git brew brew-cask npm tmux vagrant zsh_reload zsh-syntax-highlighting)
+  - install fuze

@@ -27,6 +27,10 @@ log "setting up  .vimrc"
 nvim +PluginInstall +qall
 
 
+# -----------------------------------------------------------------------------
+log "creating .tmux.conf"
+[ -f ~/.tmux.conf ] || echo "source-file  ~/dotfiles/.tmux.conf" >> ~/.tmux.conf
+
 # ------------------------------------------------------------------------------
 log "Cleaning up brew…"
 brew linkapps
