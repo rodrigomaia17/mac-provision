@@ -9,3 +9,4 @@ Manual steps:
   - create the variable plugins at.zshrc: plugins=(git brew brew-cask npm tmux vagrant zsh_reload zsh-syntax-highlighting)
   - install fuze
   - install enigmail
+  - install coy

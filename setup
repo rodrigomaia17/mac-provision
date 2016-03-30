@@ -2,6 +2,7 @@
 set -eu
 
 [ -d ~/.cider ] || git clone http://github.com/rodrigomaia17/mac-provision ~/.cider
+[ -f ~/.cider/scripts/osx]
 cd ~/.cider
 #git pull --recurse-submodules && git submodule update --recursive
 git submodule foreach "(git checkout master; git pull)"
