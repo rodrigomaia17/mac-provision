@@ -6,32 +6,23 @@ log () {
   tput setaf 2; printf "\n$fmt" "$@"; tput sgr0;
 }
 
-# ------------------------------------------------------------------------------
-log "Installing latest ruby…"
-TMP_RC=$(mktemp -t rcfile); cat << EOF > $TMP_RC
-    LATEST_RUBY=\$(curl -s  https://raw.githubusercontent.com/postmodern/ruby-versions/master/ruby/versions.txt | sort | tail -n1)
-    export RBENV_ROOT=/usr/local/var/rbenv
-    eval "\$(rbenv init -)"
+# -----------------------------------------------------------------------------
+log "creating .zshrc.local"
+[ -f ~/.oh-my-zsh/custom/local.zsh ] || echo "source  ~/dotfiles/.zshrc.local" >> ~/.oh-my-zsh/custom/local.zsh
 
-    rbenv install \$LATEST_RUBY --skip-existing
-    rbenv global \$LATEST_RUBY
+# -----------------------------------------------------------------------------
+log "setting up dracula color scheme"
+[ -d ~/dracula-theme ] || git clone https://github.com/zenorocha/dracula-theme/ ~/dracula-theme
+[ -d ~/.oh-my-zsh/themes/dracula.zsh-theme ] || ln -s ~/dracula-theme/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 
-    rm -f $TMP_RC
-EOF
-zsh --rcs $TMP_RC
-unset TMP_RC
+# -----------------------------------------------------------------------------
+log "setting up  .vimrc"
 
-# ------------------------------------------------------------------------------
-log "Installing latest nodejs…"
-TMP_RC=$(mktemp -t rcfile); cat << EOF > $TMP_RC
-    source \$(brew --prefix nvm)/nvm.sh
-    nvm install stable
-    nvm alias default stable
+[ -d ~/.config/nvim ] || mkdir ~/.config/nvim
+[ -d ~/.config/nvim/bundle/Vundle.vim ] || git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
+[ -f ~/.config/nvim/init.vim ] || echo "source  ~/dotfiles/.vimrc.local" >> ~/.config/nvim/init.vim
+nvim +PluginInstall +qall
 
-    rm -f $TMP_RC
-EOF
-zsh --rcs $TMP_RC
-unset TMP_RC
 
 # ------------------------------------------------------------------------------
 log "Cleaning up brew…"
