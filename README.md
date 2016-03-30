@@ -8,3 +8,4 @@ Manual steps:
   - set the colorscheme dracula at iterm2 preferences
   - create the variable plugins at.zshrc: plugins=(git brew brew-cask npm tmux vagrant zsh_reload zsh-syntax-highlighting)
   - install fuze
+  - install enigmail

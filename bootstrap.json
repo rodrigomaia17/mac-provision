@@ -32,7 +32,8 @@
 		"vagrant",
 		"dockertoolbox",
 		"thunderbird",
-    "torbrowser"
+    "torbrowser",
+    "gpgtools"
 			],
 		"formulas": [
 			"archey",
