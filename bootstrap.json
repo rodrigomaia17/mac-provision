@@ -31,7 +31,8 @@
 		"vlc-nightly",
 		"vagrant",
 		"dockertoolbox",
-		"thunderbird"
+		"thunderbird",
+    "torbrowser"
 			],
 		"formulas": [
 			"archey",
