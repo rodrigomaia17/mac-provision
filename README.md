@@ -10,3 +10,4 @@ Manual steps:
   - install fuze
   - install enigmail
   - install coy
+  - install brew services

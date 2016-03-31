@@ -67,6 +67,7 @@
     "the_silver_searcher",
     "tree",
     "tor",
+    "leiningen",
     "gnupg"
   ],
   "symlinks": {

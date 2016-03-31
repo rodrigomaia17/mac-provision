@@ -29,6 +29,7 @@ nvim +PluginInstall +qall
 
 # -----------------------------------------------------------------------------
 log "creating .tmux.conf"
+[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 [ -f ~/.tmux.conf ] || echo "source-file  ~/dotfiles/.tmux.conf" >> ~/.tmux.conf
 
 # ------------------------------------------------------------------------------
