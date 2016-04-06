@@ -68,7 +68,9 @@
     "tree",
     "tor",
     "leiningen",
-    "gnupg"
+    "gnupg",
+    "ansible",
+    "pass"
   ],
   "symlinks": {
     "dotfiles/.alias":"~/dotfiles/",

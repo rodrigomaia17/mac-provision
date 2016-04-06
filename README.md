@@ -11,3 +11,4 @@ Manual steps:
   - install enigmail
   - install coy
   - install brew services
+  - install npm global packages (hackmyresume...)
