@@ -71,7 +71,8 @@
     "leiningen",
     "gnupg",
     "ansible",
-    "pass"
+    "pass",
+    "vim"
   ],
   "symlinks": {
     "dotfiles/.alias":"~/dotfiles/",
