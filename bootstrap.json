@@ -55,6 +55,7 @@
     "git",
     "neovim/neovim/neovim",
     "git-extras",
+    "git-crypt",
     "httpie",
     "imagemagick",
     "jenv",
