@@ -80,8 +80,8 @@
     "dotfiles/.tmux.conf":"~/dotfiles/",
     "dotfiles/.vimrc.local":"~/dotfiles/",
     "dotfiles/.vimrc.plugins":"~/dotfiles/",
-    "dotfiles/.zshrc.local":"~/dotfiles/"
-
+    "dotfiles/.zshrc.local":"~/dotfiles/",
+    "dotfiles/init.vim":"~/dotfiles/"
   },
   "taps": [
     "caskroom/cask",
